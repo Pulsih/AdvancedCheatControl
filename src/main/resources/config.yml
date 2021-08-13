@@ -1,0 +1,95 @@
+# AdvancedCheatControl Configuration File
+
+Update-Checker: true
+
+Prefix: "&8[&a&lA&c&lC&d&lC&8] "
+
+ScreenShare-Options:
+  # Use the gui to end the SS
+  End-With-Gui: true
+  Disable-PvP: true
+  Disable-Enderpearls: true
+  # Freeze the player when starting the SS
+  Freeze-On-Start: true
+  # This option is strongly recommended.
+  # This option is needed for make private messages
+  # like ID of AnyDesk and other stuff, readable only
+  # from the Admin and the Player under SS.
+  Chat-Only-With-SS-Players:
+    Enabled: true
+    Format: "&8&l(&4&lSS&8&l) &7%player%&8: &7%message%"
+    # Chat-Spy is only readable from players that has the
+    # permission advancedcheatcontrol.screenshare.spy
+    Chat-Spy: "&8&l(&4&lSPY-SS&8&l) &7%player%&8: &7%message%"
+  # Send a title when starting the SS
+  Title:
+    Enabled: true
+    # Use , for split title / subtitle
+    Text: "&c&lYOU ARE UNDER SS!,&4&lLISTEN TO THE ADMIN!"
+  # Send a title when starting the SS
+  End-Title:
+    Enabled: true
+    Text: "&2&lYou resulted negative,&2&lto the ScreenShare!"
+  Sound-On-Start:
+    Enabled: true
+    # SoundType Volume Pitch
+    Sound: "ITEM_FIRECHARGE_USE 5 1"
+  # Play sound once unfrozen
+  Sound-On-End:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP 5 1"
+  # Punishments executed when a
+  # player left during a SS
+  Quit-Punishment:
+    Broadcast-Message:
+      Enabled: true
+      Text: "&c%player% left during a ScreenShare!"
+    # Execute commands when quitting
+    # Use %player% for the player name
+    Commands:
+      Enabled: true
+      # Only from console
+      Commands-To-Execute:
+        - "tempban %player% 30d Lefting while ScreenSharing"
+  Disable-Commands:
+    Enabled: true
+    # The commands allowed
+    Commands-Whitelist:
+      - "/msg"
+      - "/tell"
+
+Freeze-Options:
+  Disable-PvP: true
+  Disable-Enderpearls: true
+  Give-Blindness: true
+  # Send a title when frozen
+  Title:
+    Enabled: true
+    # If persistent, the title will be sent till
+    # the player will be unfrozen.
+    Persistent: true
+    Text: "&c&lYOU HAVE BEEN FROZEN!,&4&lDO NOT LOG OUT!"
+  # Send a title when unfrozen
+  Unfroze-Title:
+    Enabled: true
+    Text: "&2&lYOU HAVE BEEN UNFROZEN!,&7You can now move!"
+  # When freezing a player, send to him an alert sound
+  Sound-On-Freeze:
+    Enabled: true
+    # SoundType Volume Pitch
+    Sound: "ITEM_FIRECHARGE_USE 5 1"
+  # Play sound once unfrozen
+  Sound-On-Unfreeze:
+    Enabled: true
+    Sound: "ENTITY_PLAYER_LEVELUP 5 1"
+  # Send a message when frozen
+  Message:
+    Enabled: true
+    Persistent: false
+    Text: "&cYou have been frozen! Do not log out and listen to the admin!"
+  Disable-Commands:
+    Enabled: true
+    # The commands allowed
+    Commands-Whitelist:
+      - "/msg"
+      - "/tell"

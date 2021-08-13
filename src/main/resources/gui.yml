@@ -1,0 +1,41 @@
+Title: "&2Confirm Ending"
+Lines: 3
+Gui-Filler:
+  Enabled: true
+  Material: STAINED_GLASS_PANE
+# ( Do not add a / for commands )
+# Use %player% for the player name that is under SS
+# Actions List:
+# [CLOSE_INVENTORY] Close the inventory for the player
+# [END] End the SS
+# [PLAYER] Execute a command for the player
+# [CONSOLE] Execute a command from the player
+Items:
+  EndAndBan:
+    Material: WOOL:14
+    Displayname: "&c&lEND AND BAN"
+    Lore:
+      - "&7Click here to end the SS and"
+      - "&cBan &7the player if it has"
+      - "&7resulted &cpositive&7."
+    Slot: 12
+    Actions:
+      - "[PLAYER] tempban %player% 30d Cheating (SS)"
+      - "[END]"
+  GoBack:
+    Material: ARROW
+    Displayname: "&cGo Bank"
+    Lore:
+      - "&7Click here to close this gui."
+    Slot: 14
+    Actions:
+      - "[CLOSE_INVENTORY]"
+  End:
+    Material: WOOL:5
+    Displayname: "&2&lCONFIRM ENDING"
+    Lore:
+      - "&7Click here to end the SS if the"
+      - "&7player has resulted &2negative &7to it."
+    Slot: 16
+    Actions:
+      - "[END]"

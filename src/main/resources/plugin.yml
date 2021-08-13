@@ -1,0 +1,18 @@
+name: AdvancedCheatControl
+version: @version@
+main: me.pulsi_.advancedcheatcontrol.AdvancedCheatControl
+api-version: 1.13
+load: STARTUP
+authors: [ Pulsi_ ]
+description: The best CheatControl plugin, allow you to manage players with a plugin costumizable at 100% with multiple features!
+commands:
+  advancedcheatcontrol:
+    aliases: [cheatcontrol, cc]
+
+  screenshare:
+    aliases: [ss]
+
+  freeze:
+    description: Freeze a player and avoid any type of movement
+  unfreeze:
+    description: UnFreeze a player

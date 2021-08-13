@@ -1,0 +1,51 @@
+# Messages File Configuration
+
+# You can remove the messages that you don't want
+# by commenting or removing them.
+
+# Help message
+Help:
+  - "&8[&a&lAdvanced&c&lCheat&d&lControl&8] &7Help page."
+  - ""
+  - "&7/cc setwarp Player/Admin &fSet the warp to teleport when starting the ScreenShare"
+  - "&7/cc setexit Player/Admin &fSet the warp to teleport when ending the ScreenShare"
+  - "&7/cc reload &fReload the plugin"
+  - "&7/ss [Player] &fStarts the ScreenShare with the selected player"
+  - "&7/freeze [Player] &fFreeze the player"
+  - "&7/unfreeze [Player] &fUnfreeze the player"
+
+# Plugin
+Reload-Message: "&7Successfully reloaded the plugin!"
+Successfully-Set-PlayerWarp: "&7Successfully set the Player warp!"
+Successfully-Set-PlayerExit: "&7Successfully set the Player exit!"
+Successfully-Set-AdminWarp: "&7Successfully set the Admin warp!"
+Successfully-Set-AdminExit: "&7Successfully set the Admin exit!"
+Successfully-Frozen: "&7Successfully frozen &d%player%&7!"
+Successfully-Unfrozen: "&7Successfully unfrozen &d%player%&7!"
+ScreenShare-Started: "&7You have started the ScreenShare with &d%player%&7!"
+Under-ScreenShare: "&cYou are now under a ScreenShare, listen to the admin!"
+ScreenShare-Ended: "&7The ScreenShare has successfully ended!"
+
+# Warnings
+No-Permission: "&cYou don't have the permission!"
+Unknown-Command: "&cUnknown command!"
+Not-Player: "&cYou are not a player!"
+Invalid-Player: "&cPlease choose a valid player!"
+Player-Warp-Missing: "&cThe &dPlayer Warp &cis missing! Please set it with &d/cc setwarp Player"
+Admin-Warp-Missing: "&cThe &dAdmin Warp &cis missing! Please set it with &d/cc setwarp Admin"
+Internal-Error: "&cAn internal error has occurred while trying to perform this command. Check the console for more details."
+Already-Frozen: "&d%player% &cis already frozen!"
+Already-Unfrozen: "&d%player% &cis already unfrozen!"
+Cannot-SS-Yourself: "&cYou can't ScreenShare yourself!"
+Already-In-SS: "&cThis player is already doing a ScreenShare!"
+Cannot-Use-Enderpearl: "&cYou can't use the enderpearl now!"
+Cannot-SS-Player: "&cYou can't ScreenShare this player!"
+Cannot-Freeze-Player: "&cYou can't Freeze this player!"
+
+# Usages
+Screen-Share-Usage: "&cUsage: /ss [Player]"
+Screen-Share-End: "&cUse /ss end to end the ScreenShare"
+Freeze-Usage: "&cUsage: /freeze [Player]"
+Unfreeze-Usage: "&cUsage: /unfreeze [Player]"
+SetWarp-Usage: "&cUsage: /cc setwarp Player/Admin"
+SetExit-Usage: "&cUsage: /cc setexit Player/Admin"
